@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  {% extends "base.html" %}
+ +
+ +{% block content %}
+ +    <ol>
+ +    {% for  i in range(1,n+1) %}
+ +        <li>
+ +        {% if i % 15 == 0 %}
+ +            FizzBuzz
+ +        {% elif i % 3 == 0 %}
+ +            Fizz
+ +        {% elif i % 5 == 0 %}
+ +            Buzz
+ +        {% else %}
+ +            {{ i }}
+ +        {% endif %}
+ +        </li>
+ +    {% endfor %}
+ +</ol>
+ +
+ +{% endblock %}
+ </body>
+</html>

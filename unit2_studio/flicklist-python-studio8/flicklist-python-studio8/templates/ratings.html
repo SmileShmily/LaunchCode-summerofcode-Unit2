@@ -1,0 +1,25 @@
+<h2>Movies I Have Watched:</h2>
+
+<ul>
+{% for movie in movies %}
+    <li>
+        <h3>{{ movie }}</h3>
+
+        <!--
+        TODO 3
+        Each of these list items should contain a form that submits to /ratings
+        The form should contain:
+            - label that says "My Rating"
+            - a dropdown menu with 6 options:
+                - "How was it?"
+                - *
+                - **
+                - ***
+                - ****
+                - *****
+            - a hidden input to tell the back-end which movie we are rating
+            - a submit button that says "Rate it!"
+        -->
+    </li>
+{% endfor %}
+</ul>
